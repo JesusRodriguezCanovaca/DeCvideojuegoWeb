@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Dinosaur Eggs Capture - Contacto </title>
+
+<!-- A continuació enllaçem el full d'estils -->
+<link href="../css/contacte.css" rel="stylesheet">
+<!-- A les properes línies afegim les metadades i els seus atributs principals-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="author" content="Jesus Rodriguez Canovaca" />
+<meta name="generator" content="Visual Studio Code 1.38.1" />
+<meta name="copyright" content="jrodriguez" />
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="EAF, html5, css, videojuego, Javascript, web, Dinosaur" />
+<meta name="description" content="Exercici d'avaluació contínua EAF4 del Mòdul M06, CFGS d'Animacions 3D, videojocs i entorns interactius." />
+
+</head>
+<body>
+<header>
+<a href="../index.html"><img src="../assets/images/dinosaurEggsCaptureTitulo.png" alt="Dinosaur Eggs Capture"></a>
+</header>
+<nav>
+    <ul>
+        <li><a href="../index.html">INICIO</a></li>
+        <li><a href="videojoc.html">VIDEOJUEGO</a></li>
+        <li><a class="activo" href="contacte.html">CONTACTO</a></li>
+    </ul>
+</nav>
+<section>
+    <article>
+        <fieldset>
+            <legend> Formulario de contacto </legend>
+                <form action="https://ioc.xtec.cat/educacio/formulari.php" method="post">
+                    <label for="nombreYapellidos">Nombre y apellidos:</label>
+                    <input type="text" id="nombreYapellidos" name="nombreYapellidos" value="" />
+                    <br/><br/>
+
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" value="" />
+                    <br/><br/>
+
+                    <label for="ciudades">Ciudad:</label>
+                    <select id="ciudades" name="ciudades" required>
+                        <option value=""> − Seleccionar − </option>
+                        <option value="1"> Barcelona </option>
+                        <option value="2"> Tarragona </option>
+                        <option value="3"> Lerida </option>
+                        <option value="4"> Gerona </option>
+                    </select>
+                    <br/><br/>
+
+                    <label for="fechaDeNacimiento">Fecha de nacimiento:</label>
+                    <input type="date" id="fechaDeNacimiento" name="fechaDeNacimiento" required/>
+                    <br/><br/>
+
+                    <label for="sexo">Sexo:</label>
+                    <input type="radio" id="mujer" name="sexo" value="mujer" required/>Mujer
+                    <input type="radio" id="hombre" name="sexo" value="hombre" required/>Hombre
+                    <br/><br/>
+
+                    <label for="correoElectronico">Correo electrónico:</label>
+                    <input type="email" id="correoElectronico" name="correoElectronico" value="" required/>
+                    <br/><br/>
+
+                    <label for="pass">Password:</label>
+                    <input type="password" id="pass" name="pass" value="" size="15" maxlength="25" required/>
+                    <br/><br/><br/>
+
+                    <label for="acepto">Aceptación de términos:</label><br/>
+                    <input name="acepto" type="checkbox" id="acepto" value="" required/>Acepto<br/><br/>
+                    <input type="submit" value="Enviar" onclick="validarListaCiudades ()"/>
+                </form>
+        </fieldset>
+    </article>
+</section>
+<footer>Copyright 2019 - Jesús Rodríguez Canovaca</footer>
+</body>
+</html>
